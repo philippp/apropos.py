@@ -1,0 +1,11 @@
+Deep, dirty, and exhaustive 'apropos' for Python. Crawls all 
+libraries in the system.path, and matches a querystring against
+all module names, as well as class, function, and method names 
+and docstrings of the top-level modules.
+
+Usage: ./apropos.py <keyword/regex>
+
+This module was created due to the limits of PyDoc's apropos
+method, which fails hard when one of the top level modules cannot
+be imported. The native apropos method also does not crawl
+docstrings, or deep module names, which this module does.
